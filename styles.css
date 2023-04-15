@@ -9,6 +9,7 @@
 
 body {
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
 header {
@@ -17,11 +18,10 @@ header {
     left: 0;
     width: 100%;
     padding: 30px 100px;
-    display: flex;
+    display: flex;  
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-    background-color: rgb(59, 56, 56);
 }
 
 .logo {
@@ -63,4 +63,58 @@ header {
 .navigation a.active span {
     transform: scale(1);
     opacity: 1;
+}
+
+.parallax {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url("imgs/background.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#text {
+    position: absolute;
+    font-size: 6em;
+    color: #30012a;
+    text-shadow: 2px 4px 5px #F9F9F9;
+}
+
+.parallax img {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+.parallax img#gate-left {
+    transform: translateX(-282px);
+    position: fixed;
+}
+
+.parallax img#gate-right {
+    transform: translateX(305px);
+    position: fixed;
+}
+
+.content {
+    position: relative;
+    background: #020912;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+}
+
+.content p, h2 {
+    color: #FFF;
+    text-align: justify;
+}
+
+.content h2 {
+    font-size: 3em;
 }
