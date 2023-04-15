@@ -1,4 +1,4 @@
-# Parallax-cemetery
+# Parallax cemetery
 Projeto de site parallax com tema de cemitério responsivo.<br><br>
 
 
